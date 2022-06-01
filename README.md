@@ -8,10 +8,6 @@
 - HTML, CSS, JS
 - ESLint, Stylelint, Web Hint, Lighthouse
 
-## Online Version Link
-This project is available online through the following link.
-https://todo.nduatikagiri.co.ke
-
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
