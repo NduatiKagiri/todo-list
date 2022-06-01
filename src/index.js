@@ -4,12 +4,12 @@ const todos = [
   {
     description: 'Wash the dishes',
     completed: false,
-    index: 0,
+    index: 1,
   },
   {
     description: 'Complete To-DO list Project',
     completed: true,
-    index: 1,
+    index: 2,
   },
 ];
 
