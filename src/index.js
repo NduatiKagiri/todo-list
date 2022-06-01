@@ -1,4 +1,4 @@
-import "./style.css";
+import './style.css';
 
 const todos = [
   {
@@ -13,14 +13,12 @@ const todos = [
   },
 ];
 
-todos.sort((a, b) => {
-  return a.index - b.index;
-});
+todos.sort((a, b) => a.index - b.index);
 
 const comps = (comp) => {
-  if (comp.completed === true) return "Checked";
+  if (comp.completed === true) return 'Checked';
   return null;
-}
+};
 
 todos.forEach((todo) => {
   document.querySelector('.todos').innerHTML += `
