@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f3ed;
+}
+
+ul li {
+  list-style: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+h5,
+p,
+input {
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 65%;
+  margin-top: 30px;
+}
+
+.container .title,
+.container .add,
+.container ul li {
+  width: 100%;
+  height: 55px;
+  border: 1px solid #d3d3d3;
+  box-shadow: 1px 1px 15px #d3d3d3;
+  margin-bottom: 2px;
+  padding: 5px 15px;
+  background: #fff;
+}
+
+.container ul {
+  width: 100%;
+}
+
+.container ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container ul li div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container ul li input {
+  margin-right: 15px;
+  border: 2px solid #a8a7a2;
+  width: 20px;
+  height: 20px;
+}
+
+.container ul li img {
+  transform: rotate(90deg);
+  opacity: 0.5;
+  cursor: all-scroll;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title img {
+  height: 27px;
+  opacity: 0.5;
+}
+
+.add form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add form input {
+  border: none;
+  flex-grow: 1;
+  font-style: italic;
+}
+
+.add form button img {
+  height: 18px;
+}
+
+.add form button {
+  border: none;
+}
+
+#clear {
+  background: #f5f3ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  border: 1px solid #d3d3d3;
+  box-shadow: 1px 1px 15px #d3d3d3;
+  margin-bottom: 2px;
+  padding: 5px 15px;
+}
+
+#clear button {
+  color: #a8a7a2;
+  border: none;
+  font-style: italic;
+  background: #f5f3ed;
+  font-size: 18px;
+}
+
+#clear button:hover {
+  font-size: 21px;
+  text-decoration: underline;
+}
