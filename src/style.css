@@ -74,7 +74,6 @@ input {
 }
 
 .container ul li img {
-  transform: rotate(90deg);
   opacity: 0.5;
   cursor: all-scroll;
 }
@@ -136,4 +135,21 @@ input {
 #clear button:hover {
   font-size: 21px;
   text-decoration: underline;
+}
+
+.more {
+  transform: rotate(90deg);
+}
+
+.delete {
+  height: 30px;
+  opacity: 1;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
 }
