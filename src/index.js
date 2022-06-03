@@ -1,13 +1,17 @@
 import './style.css';
 import { Crud } from './crud.js';
+import { Interactive } from './interactive.js';
 
 const crud = new Crud();
+const interactive = new Interactive();
 crud.displayItems();
+interactive.checkBoxListener();
 
 const addForm = document.getElementById('addForm');
 const editForms = document.querySelectorAll('.editForm');
 const moreBtns = document.querySelectorAll('.more');
 const delBtns = document.querySelectorAll('.delete');
+const clearBtn = document.getElementById('clearButton');
 
 moreBtns.forEach((moreBtn) => {
   moreBtn.addEventListener('click', () => {
@@ -27,6 +31,10 @@ moreBtns.forEach((moreBtn) => {
     editForm.classList.remove('none');
     editForm.classList.add('block');
   });
+});
+
+clearBtn.addEventListener('click', () => {
+  interactive.clearButtonListener();
 });
 
 addForm.addEventListener('submit', (event) => {
