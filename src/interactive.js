@@ -32,9 +32,7 @@ export class Interactive {
           }
         });
         this.constructor.storeItems(items);
-        /* eslint-disable no-implied-eval */
-        setTimeout('location.reload(true);', 0);
-        /* eslint-enable no-implied-eval */
+        window.location.reload();
       });
     });
   }
@@ -60,8 +58,6 @@ export class Interactive {
       newItem.index = newItems.indexOf(newItem) + 1;
     });
     this.constructor.storeItems(newItems);
-    /* eslint-disable no-implied-eval */
-    setTimeout('location.reload(true);', 0);
-    /* eslint-enable no-implied-eval */
+    window.location.reload();
   }
 }

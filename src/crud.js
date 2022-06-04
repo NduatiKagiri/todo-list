@@ -34,9 +34,7 @@ export class Crud {
 
       storedItems.push(newItem);
       this.constructor.storeItems(storedItems);
-      /* eslint-disable no-implied-eval */
-      setTimeout('location.reload(true);', 0);
-      /* eslint-enable no-implied-eval */
+      window.location.reload();
     }
   }
 
@@ -54,9 +52,7 @@ export class Crud {
       });
 
       this.constructor.storeItems(newItems);
-      /* eslint-disable no-implied-eval */
-      setTimeout('location.reload(true);', 0);
-      /* eslint-enable no-implied-eval */
+      window.location.reload();
     }
   }
 
@@ -94,8 +90,6 @@ export class Crud {
       }
     });
     this.constructor.storeItems(oldItems);
-    /* eslint-disable no-implied-eval */
-    setTimeout('location.reload(true);', 0);
-    /* eslint-enable no-implied-eval */
+    window.location.reload();
   }
 }
