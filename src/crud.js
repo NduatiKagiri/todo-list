@@ -34,9 +34,7 @@ export class Crud {
 
       storedItems.push(newItem);
       this.constructor.storeItems(storedItems);
-      /* eslint-disable no-implied-eval */
-      setTimeout('location.reload(true);', 0);
-      /* eslint-enable no-implied-eval */
+      window.location.reload();
     }
   }
 
@@ -54,9 +52,7 @@ export class Crud {
       });
 
       this.constructor.storeItems(newItems);
-      /* eslint-disable no-implied-eval */
-      setTimeout('location.reload(true);', 0);
-      /* eslint-enable no-implied-eval */
+      window.location.reload();
     }
   }
 
@@ -73,7 +69,7 @@ export class Crud {
       document.querySelector('.todos').innerHTML += `
         <li>
           <div>
-            <input type="checkbox" value="${todo.index}" ${comps(todo)}>
+            <input class="completed" id="check${todo.index}" type="checkbox" value="${todo.index}" ${comps(todo)}>
             <p class="block" id="pDesc${todo.index}">${todo.description}</p>
             <form class="editForm none" id="editForm${todo.index}" method="get" style="flex-grow:1;">
               <input id="edit${todo.index}" type="text" value="${todo.description}" required style="width:100%;">
@@ -94,8 +90,6 @@ export class Crud {
       }
     });
     this.constructor.storeItems(oldItems);
-    /* eslint-disable no-implied-eval */
-    setTimeout('location.reload(true);', 0);
-    /* eslint-enable no-implied-eval */
+    window.location.reload();
   }
 }
