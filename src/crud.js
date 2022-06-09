@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable class-methods-use-this */
 
-export class Crud {
+class Crud {
   constructor() {
     return null;
   }
@@ -34,7 +34,9 @@ export class Crud {
 
       storedItems.push(newItem);
       this.constructor.storeItems(storedItems);
-      window.location.reload();
+      if (typeof window !== 'undefined') {
+        window.location.reload();
+      }
     }
   }
 
@@ -52,7 +54,9 @@ export class Crud {
       });
 
       this.constructor.storeItems(newItems);
-      window.location.reload();
+      if (typeof window !== 'undefined') {
+        window.location.reload();
+      }
     }
   }
 
@@ -90,6 +94,10 @@ export class Crud {
       }
     });
     this.constructor.storeItems(oldItems);
-    window.location.reload();
+    if (typeof window !== 'undefined') {
+      window.location.reload();
+    }
   }
 }
+
+module.exports = Crud;
